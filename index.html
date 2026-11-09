@@ -24,14 +24,28 @@
         <h1>Intercambio de Videojuegos</h1>
 
         <label for="nombre">Nombre del Videojuego</label>
-        <input id="nombre" type="text">
+        <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            required
+            minlength="3"
+            maxlength="50"
+            placeholder="Nombre del videojuego">
 
-        <label for="tipo">Tipo</label>
+        <label for="tipo">Género de Videojuego</label>
         <select id="tipo" name="tipo" required>
-            <option value="">Selecciona un tipo</option>
-            <option value="personal">Personal</option>
-            <option value="trabajo">Trabajo</option>
-            <option value="estudio">Estudio</option>
+            <option value="" selected disabled>Selecciona un Género</option>
+            <option value="accion">Acción</option>
+            <option value="aventura">Aventura</option>
+            <option value="deportes">Deportes</option>
+            <option value="carreras">Carreras</option>
+            <option value="estrategia">Estrategia</option>
+            <option value="rol">RPG (Juego de Rol)</option>
+            <option value="terror">Terror</option>
+            <option value="simulacion">Simulación</option>
+            <option value="plataformas">Plataformas</option>
+            <option value="lucha">Lucha</option>
             <option value="otro">Otro</option>
         </select>
 

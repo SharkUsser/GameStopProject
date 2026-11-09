@@ -13,4 +13,3 @@ function mostrarAviso() {
 }
 
 boton.addEventListener("click", mostrarAviso);
-
