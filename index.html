@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Intercambio de Videojuegos</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="app.js" defer></script> 
+</head> 
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li><a>Videojuegos</a></li>
+                    <li><a>Consolas</a></li>
+                    <li><a>Merch</a></li>
+                    <li><a>Empresa</a></li>
+                    <li><a>Cuenta</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <div class="contenedor">
+        <h1>Intercambio de Videojuegos</h1>
+
+        <label for="nombre">Nombre del Videojuego</label>
+        <input id="nombre" type="text">
+
+        <label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecciona un tipo</option>
+            <option value="personal">Personal</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="estudio">Estudio</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="descripcion">Estado o Descripción</label>
+        <textarea id="descripcion"></textarea>
+
+        <label for="correo">Correo electrónico:</label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ejemplo@correo.com"
+            required>
+
+        <button id="boton" type="button">Proponer Intercambio</button>
+
+        <p id="mensaje" aria-live="polite"></p>
+    </div>
+    
+    <footer>
+        All rigths reserved - GameStop USA
+    </footer>
+</body> 
+</html>
